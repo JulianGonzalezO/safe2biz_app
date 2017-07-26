@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?android:colorBackground"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutScrollViewChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/framelayoutDrawerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageViewCover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_header_height"
+                android:contentDescription="@string/drawer_header_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_cover_main" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHeaderTexts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_padding_8"
+                android:layout_marginEnd="@dimen/margin_padding_40"
+                android:layout_marginLeft="@dimen/margin_padding_16"
+                android:layout_marginRight="@dimen/margin_padding_40"
+                android:layout_marginStart="@dimen/margin_padding_16"
+                android:paddingTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewPictureMain"
+                    android:layout_width="@dimen/profile_picture_64"
+                    android:layout_height="@dimen/profile_picture_64"
+                    android:layout_marginBottom="@dimen/margin_padding_4"
+                    android:layout_marginLeft="@dimen/margin_padding_16"
+                    android:layout_marginStart="@dimen/margin_padding_16"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height_avatar_single_line_56_64"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/md_text_white" />
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bienvenida_safe2biz"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/md_white_1000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayoutDrawerMain"
+        android:background="@color/msi_background_green"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutScrollViewChild"
+        android:orientation="vertical"
+        tools:context="pe.dominiotech.movil.safe2biz.base.fragment.PrincipalFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/md_white_1000">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_sac_separador_cardview">
+                <LinearLayout
+                    android:id="@+id/sincronizacion"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:src="@drawable/ic_cloud_done_white_36dp"
+                        android:tint="@color/safe2biz_anaranjado_logo"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="75"
+                        android:paddingLeft="10dp"
+                        android:text="@string/sincronizacion"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:id="@+id/sinc_arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:tint="@color/tw__medium_gray"
+                        android:src="@drawable/ic_arrow_down_black_24dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/descarga"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_drawer_subitem">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cloud_download_white_36dp"
+                        android:tint="@color/safe2biz_anaranjado_logo"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/lb_titulo_descarga"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/envio"
+                android:visibility="gone"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_drawer_subitem">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cloud_upload_white_36dp"
+                        android:tint="@color/safe2biz_anaranjado_logo"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/lb_titulo_subida_modulos"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_sac_separador_cardview">
+                <LinearLayout
+                    android:id="@+id/cambiar_sede"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="15"
+                        android:src="@drawable/unidad"
+                        android:tint="@color/safe2biz_anaranjado_logo"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="85"
+                        android:text="Cambiar Sede"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_sac_separador_cardview">
+                <LinearLayout
+                    android:id="@+id/cerrar_sesion"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="15"
+                        android:src="@drawable/cerrar_sesion48"
+                        android:tint="@color/safe2biz_anaranjado_logo"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="85"
+                        android:text="@string/cerrarsesion"
+                        android:paddingLeft="10dp"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

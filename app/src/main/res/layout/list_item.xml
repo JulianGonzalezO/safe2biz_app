@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:paddingLeft="60dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <!--<TextView-->
+            <!--android:id="@android:id/textViewMenuItemTitle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="top|left"-->
+            <!--android:gravity="center"-->
+            <!--tools:ignore="RtlHardcoded"/>-->
+
+
+        <ImageView
+            android:id="@+id/imageViewMenuItemIcon"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_padding_8"
+            android:layout_marginStart="@dimen/margin_padding_16"
+            android:tint="@color/md_text_white" />
+
+        <TextView
+            android:id="@+id/textViewMenuItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_padding_4"
+            android:layout_toRightOf="@id/imageViewMenuItemIcon"
+            android:text=""
+            style="@style/AppNormalFont" />
+
+    </RelativeLayout>
+
+</FrameLayout>

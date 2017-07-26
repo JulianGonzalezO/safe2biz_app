@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sac.activity.AccionCorrectivaDetalleActivity">
+
+    <item
+        android:id="@+id/btnSubir"
+        android:icon="@drawable/ic_file_upload_black_24dp"
+        android:title="@string/enviar"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="4"
+        android:menuCategory="secondary"
+        android:visible="true"/>
+</menu>

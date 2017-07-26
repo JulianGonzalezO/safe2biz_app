@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_fondo_menu"
+    android:orientation="vertical"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context="pe.dominiotech.movil.safe2biz.base.activity.DashboardActivity">
+
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+    <WebView
+        android:id="@+id/webViewDashboard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </WebView>
+
+</LinearLayout>

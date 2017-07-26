@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dominiotech -->
+    <string name="SERVICIO_SC_USER" translatable="false">/ws/null/pr_ws_sc_user</string>
+    <string name="SERVICIO_FB_UEA" translatable="false">/ws/null/pr_ws_fb_uea</string>
+    <string name="SERVICIO_OPS_TIPO_RESULTADO" translatable="false">/ws/null/pr_ws_ops_tipo_resultado</string>
+    <string name="SERVICIO_OPS_LISTA_VERIFICACION" translatable="false">/ws/null/pr_ws_ops_lista_verificacion</string>
+    <string name="SERVICIO_OPS_LISTA_VERIFICACION_CATEGORIA" translatable="false">/ws/null/pr_ws_ops_lista_verif_categoria</string>
+    <string name="SERVICIO_OPS_LISTA_VERIFICACION_SECCION" translatable="false">/ws/null/pr_ws_ops_lista_verif_seccion</string>
+    <string name="SERVICIO_OPS_LISTA_VERIFICACION_PREGUNTA" translatable="false">/ws/null/pr_ws_ops_lista_verif_pregunta</string>
+    <string name="SERVICIO_OPS_LISTA_VERIFICACION_RESULTADO" translatable="false">/ws/null/pr_ws_ops_lista_verif_resultado</string>
+    <string name="SERVICIO_OPS_LISTA_EMPRESA_ESPECIALIZADA" translatable="false">/ws/null/pr_ws_fb_empresa_especializada</string>
+    <string name="SERVICIO_OPS_LISTA_AREA" translatable="false">/ws/null/pr_ws_fb_area</string>
+    <string name="SERVICIO_OPS_LISTA_TURNO" translatable="false">/ws/null/pr_ws_turno</string>
+    <string name="SERVICIO_OPS_REGISTRO_GENERALES_IN" translatable="false">/ws/null/pr_ws_ops_registro_generales_in</string>
+    <string name="SERVICIO_OPS_REGISTRO_RESULTADO_IN" translatable="false">/ws/null/pr_ws_ops_registro_resultado_in</string>
+</resources>

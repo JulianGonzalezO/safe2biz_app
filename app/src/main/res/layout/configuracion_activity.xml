@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:background="@color/md_white_1000"
+tools:context="pe.dominiotech.movil.safe2biz.base.activity.ConfiguracionActivity"
+android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_configuracion"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/app_letra_tab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="24dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_letra_tab"
+                android:text="@string/ip_dominio_servidor"/>
+            <EditText
+                android:id="@+id/edtIpOrDominioConfiguracion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress|textNoSuggestions|textMultiLine"
+                android:hint="@string/ip_dominio"
+                android:textColor="@color/md_grey_600"
+                android:paddingLeft="6dp"
+                android:background="@drawable/border_sac_separador_cardview"
+                android:text="https://app.safe2biz.com/safe2biz"
+                android:maxLines="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_letra_tab"
+                android:text="@string/usuario_"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edtUsuarioConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint="@string/usuario"
+                android:textColorHint="@color/md_black_1000_25"
+                android:textColor="@color/app_letra_tab"
+                android:background="@drawable/border_sac_separador_cardview"
+                android:paddingLeft="6dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/contraseña"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_letra_tab"
+                android:text="@string/contrasenia_"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edtContraseniaConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword|textNoSuggestions"
+                android:hint="@string/contrasenia"
+                android:textColorHint="@color/md_black_1000_25"
+                android:background="@drawable/border_sac_separador_cardview"
+                android:textColor="@color/app_letra_tab"
+                android:paddingLeft="6dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnGuardarConfiguracion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/guardar_detalle"
+            style="@style/AppNormalFont"
+            android:background="@drawable/boton_azul"/>
+
+    </LinearLayout>
+</LinearLayout>

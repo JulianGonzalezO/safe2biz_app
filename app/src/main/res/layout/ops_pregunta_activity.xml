@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context="pe.dominiotech.movil.safe2biz.ops.activity.RegistroGeneralesFormActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:focusable="true" android:focusableInTouchMode="true">
+                <TextView
+                    android:id="@+id/nombreSeccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_black_1000"
+                    />
+                <TextView
+                    android:id="@+id/nombrePregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/md_black_1000"
+
+                    />
+                <RadioGroup
+                    android:id="@+id/rGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/rdBtnC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cumple (C)"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/md_green_700"
+                        android:textColor="@color/md_green_700"/>
+                    <RadioButton
+                        android:id="@+id/rdBtnCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cumple Parcialmente (CP)"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/md_yellow_900"
+                        android:textColor="@color/md_yellow_900"/>
+                    <RadioButton
+                        android:id="@+id/rdBtnNC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Cumple (NC)"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/md_red_A700"
+                        android:textColor="@color/md_red_A700"
+                        />
+                    <RadioButton
+                        android:id="@+id/rdBtnNA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Aplica (NA)"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/md_black_1000"
+                        android:textColor="@color/md_black_1000"/>
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edComentario"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/comentario"
+                        android:lines="5"
+                        android:maxLines="5"
+                        android:maxLength="100"
+                        android:textColor="@color/app_letra_tab"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/btnGaleria"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/md_white_1000"
+                        android:src="@drawable/ic_insert_photo_white_36dp"
+                        android:tint="#333" />
+
+                    <ImageButton
+                        android:id="@+id/camara"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/md_white_1000"
+                        android:src="@drawable/ic_camera" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imagen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="false" />
+                <Button
+                    android:layout_margin="10dp"
+                    android:theme="@style/AppTheme.Button"
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guardar_detalle"
+                    android:enabled="false" />
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

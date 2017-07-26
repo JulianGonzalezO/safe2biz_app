@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id" translatable="false">432007780320429</string>
+    <string name="fabric_app_id" translatable="false">0ee835cdef4515d38ba57efbccb855aaa9d28af3</string>
+    <string name="open_weather_maps_app_id" translatable="false">6495aa6d3b4f915e5d41f934548eeec5</string>
+</resources>

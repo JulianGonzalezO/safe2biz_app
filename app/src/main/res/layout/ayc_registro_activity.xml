@@ -1,0 +1,426 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context="pe.dominiotech.movil.safe2biz.ayc.activity.RegistroDetalleActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+
+    <ScrollView
+        android:id="@+id/scViewRegistroAyC"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/rllyRegistroAyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_fondo_menu"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/lnlyInfoRegistroAyC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/lnlyCampos3RegistroAyC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvOrigenRegistroAyC"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:text="@string/origen"
+                        android:textColor="@color/tw__medium_gray"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/rdBtnActo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/origen_acto"
+                            android:textColor="@color/app_letra_tab" />
+
+                        <RadioButton
+                            android:id="@+id/rdBtnCondicion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/origen_condicion"
+                            android:textColor="@color/app_letra_tab" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Area"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/tw__medium_gray"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_textColorHint="@color/tw__medium_gray"
+                    app:met_underlineColor="@color/tw__medium_gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_empresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Empresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Empresa"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColorHint="@color/tw__medium_gray"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlyCampos5RegistroAyC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvEmpresaOcurrenciaRegistroAyC"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.6"
+                        android:text="@string/empresa_ocurrencia"
+                        android:textColor="@color/app_letra_tab"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.4"
+                        android:background="@drawable/border_campos">
+
+                        <Spinner
+                            android:id="@+id/spnEmpresaOcurrenciaRegistroAyC"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_fecha"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                            <EditText
+                                android:id="@+id/Fecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:hint="Fecha"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColorHint="@color/tw__medium_gray"
+                                android:textSize="16sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/btnFecha"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="2.4"
+                            android:background="@color/md_white_1000"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/ic_event_black_24dp"
+                            android:tint="@color/msi_background_gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_hora"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                            <EditText
+                                android:id="@+id/Hora"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:hint="Hora"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColorHint="@color/tw__medium_gray"
+                                android:textSize="16sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/btnHora"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="2.3"
+                            android:background="@color/md_white_1000"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/ico_horainicio"
+                            android:tint="@color/msi_background_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/input_layout_descripcion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/Descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:hint="Descripcion"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:textColorHint="@color/tw__medium_gray"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/TipoRiesgo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Tipo de Riesgo"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/tw__medium_gray"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_textColorHint="@color/tw__medium_gray"
+                    app:met_underlineColor="@color/tw__medium_gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_accion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/Accion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:hint="Acción Inmediata"
+                        android:inputType="text|textMultiLine"
+                        android:maxLines="4"
+                        android:textColorHint="@color/tw__medium_gray"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:text="@string/ubicacion"
+                        android:textColor="@color/app_letra_tab"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:focusable="false"
+                    >
+
+                    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/mapDetalle1"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:elevation="2dp"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="fill_horizontal"
+                            android:text="@string/evidencias_del_reporte"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lnlyCampos2Sac2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageButton
+                            android:id="@+id/btnGaleria"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/md_white_1000"
+                            android:src="@drawable/ic_insert_photo_white_36dp"
+                            android:tint="#333" />
+
+                        <ImageButton
+                            android:id="@+id/btnCamara"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/md_white_1000"
+                            android:src="@drawable/ic_camera" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/imagegallery"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/guardar_detalle"
+                android:theme="@style/AppTheme.Button" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

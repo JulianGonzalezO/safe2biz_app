@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="10dp"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <!--CarView Opciones del Drawer-->
+        <ImageView
+            android:id="@+id/imageViewMenuItemIcon"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_padding_16_24"
+            android:layout_marginStart="@dimen/margin_padding_16"
+            android:tint="@color/safe2biz_azul" />
+
+        <TextView
+            android:id="@+id/textViewMenuItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_padding_8"
+            android:layout_toRightOf="@id/imageViewMenuItemIcon"
+            android:text=""
+            android:textColor="@color/app_letra_tab"
+            style="@style/AppH3Font" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/md_white_1000"
+        android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

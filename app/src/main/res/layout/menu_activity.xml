@@ -1,0 +1,62 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_fondo_menu"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <!-- The toolbar and main_activity content view -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rl">
+
+        <!-- Main content in this include, check content_main.xml -->
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/tool_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/menu_principal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fragment_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+
+    <pe.dominiotech.movil.safe2biz.utils.ScrimInsetsFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrimInsetsFrameLayout"
+        style="@style/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginEnd="@dimen/drawer_margin"
+        android:layout_marginLeft="-64dp"
+        android:layout_marginRight="@dimen/drawer_margin"
+        android:layout_marginStart="-64dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:fitsSystemWindows="true"
+        app:insetForeground="@color/status_bar_inset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Your drawer content -->
+
+            <include layout="@layout/drawer" />
+
+        </LinearLayout>
+
+    </pe.dominiotech.movil.safe2biz.utils.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

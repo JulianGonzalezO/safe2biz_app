@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_locale">es</string>
+    <string name="app_name">Safe2biz</string>
+    <string name="about">Guía de turismo del distrito de san isidro.</string>
+    <string name="website">http://www.msi.gob.pe/</string>
+    <string name="github">GitHub: github.com/dahnark</string>
+    <string name="drawer_header_image">drawer header image</string>
+    <string name="correo">Correo</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="acceder">acceder</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="presentadopor">Presentado por:</string>
+    <string name="iniciarsesionconfacebook">INICIAR SESIÓN CON FACEBOOK</string>
+    <string name="iniciarsesioncongoogle">INICIAR SESIÓN CON GOOGLE+</string>
+    <string name="registrate"><![CDATA[registrate >]]></string>
+    <string name="mislugares">MIS LUGARES</string>
+    <string name="idioma">Idioma</string>
+    <string name="activarnotificaciones">Activar notificaciones</string>
+    <string name="agregaractividades">Agregar a mis actividades</string>
+    <string name="quitaractividades">Quitar de mis actividades</string>
+    <string name="misactividades">MIS ACTIVIDADES</string>
+    <string name="usuario">Usuario</string>
+    <string name="usuario_">Usuario:</string>
+    <string name="contrasenia_">Contraseña:</string>
+    <string name="login">Login</string>
+    <string name="name">San Isidro</string>
+    <string name="email">x.x@x.com</string>
+    <string name="help"><![CDATA[Help & feedbaack]]></string>
+    <string name="saltar_aplicacion_01">Saltar e ir a la aplicación ></string>
+    <string name="title_activity_tmp">Tmp</string>
+    <string name="version">Versión 1.0</string>
+    <string name="empresa">Dominiotech</string>
+    <string name="lugar">Lima - Perú</string>
+    <string name="iniciarsesioncon">Inicia sesión con</string>
+    <string name="guion">-</string>
+    <string name="registrarse_con_email">REGISTRARSE CON</string>
+    <string name="email_inicio">EMAIL</string>
+    <string name="registrado_con_email">¿Registrado con email?</string>
+    <string name="iniciar_sesion_email">Inicia sesión</string>
+    <string name="bienvenida_san_isidro">Bienvenido a San Isidro</string>
+    <string name="action_search">Buscar</string>
+    <string name="search_act_lug">Buscar una actividad o lugar</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_dialog_info">Información</string>
+    <string name="action_favorite">Favorito</string>
+    <string name="action_new_check_list">Nueva Lista de Verificación</string>
+    <string name="guardar_cabecera">Guardar</string>
+    <string name="guardar_detalle">Guardar</string>
+    <string name="bienvenida_safe2biz">Bienvenido a Safe2biz</string>
+    <string name="action_new_registro_ayc_list">Nuevo Registro A y C</string>
+    <string name="editar">Editar</string>
+    <string name="enviar">Enviar</string>
+    <string name="por_enviar">Por enviar:</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="descargar">Descargar</string>
+    <string name="continuar">Continuar</string>
+
+    <string name="detalle_reporte">Detalle del Reporte</string>
+    <string name="levantamiento_reporte">Levantamiento del Reporte</string>
+    <string name="comentario">Comentario</string>
+    <string name="galeria">Galería:</string>
+    <string name="agregar_comentario">Agregar comentario...</string>
+
+    <!-- Sincronizacion de Datos -->
+    <string name="sincronizacion">Sincronización</string>
+    <string name="lb_titulo_sincronizacion">Sincronización de Datos</string>
+    <string name="lb_titulo_descarga">Descarga de Información</string>
+    <string name="lb_titulo_subida_modulos">Envío de Información</string>
+    <string name="lb_titulo_seleccionar_modulo">Seleccionar los Módulos: </string>
+    <string name="lb_modulo_observaciones_preventivas">Módulo de Observaciones Preventivas</string>
+    <string name="lb_modulo_actos_and_condiciones">Módulo de Actos y Condiciones</string>
+    <string name="lb_modulo_acciones_correctivas">Módulo de Acciones Correctivas</string>
+    <string name="lb_modulo_verificacion_sac">Módulo de Verificación Sac</string>
+
+    <string name="listview_cabecera_nc">NC</string>
+    <string name="listview_cabecera_cp">CP</string>
+    <string name="listview_cabecera_c">C</string>
+    <string name="listview_cabecera_na">NA</string>
+    <string name="listview_cabecera_obs">Obs.</string>
+    <string name="listview_cabecera_foto">Foto</string>
+
+    <string name="datos_generales">Datos Generales</string>
+    <string name="fecha_y_hora">Fecha y hora</string>
+    <string name="ruc">RUC:</string>
+    <string name="consultar">Consultar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="nombre_empresa">Empresa</string>
+    <string name="turno">Turno</string>
+    <string name="seleccionar">Seleccionar: </string>
+    <string name="evaluador">Evaluador:</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="obtener_ubicacion">Obtener ubicación</string>
+    <string name="latitud">Latitud:</string>
+    <string name="longitud">Longitud:</string>
+    <string name="guardar_y_continuar">Guardar y continuar</string>
+    <string name="area">Área</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="adjuntar_selecionar">Adjuntar de:</string>
+    <string name="adjuntar_de_galeria">Galería</string>
+    <string name="adjuntar_de_tomar_foto">Capturar Foto</string>
+
+    <string name="datos_generales_del_evento">Datos Generales del Evento</string>
+    <string name="segun_tipo">Según el Tipo:</string>
+    <string name="causa_inmediata">Causa Inmediata:</string>
+    <string name="causa_basica">Causa Básica:</string>
+    <string name="causa">Causa:</string>
+    <string name="accion_correctiva">Acción Correctiva:</string>
+    <string name="causa_basica_factores_personales">Factores Personales</string>
+    <string name="causa_basica_factores_trabajo">Factores de Trabajo</string>
+
+    <string name="codigo_reporte">Código Reporte:</string>
+    <string name="tipo_reporte">Tipo Reporte:</string>
+    <string name="origen">Origen:</string>
+    <string name="origen_acto">Acto</string>
+    <string name="origen_condicion">Condición</string>
+    <string name="area_de_ocurrencia">Área Ocurrencia:</string>
+    <string name="empresa_ocurrencia">Empresa Ocurrencia:</string>
+    <string name="lugar2">Lugar:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="accion_inmediata">Acción Inmediata:</string>
+    <string name="estado">Estado:</string>
+
+    <string name="datos_del_reportante">Datos del Reportante</string>
+    <string name="nombre_reportante">Nombre Reportante:</string>
+    <string name="empresa_reportante2">Empresa Reportante:</string>
+    <string name="area_reportante">Área Reportante:</string>
+
+    <string name="evidencias_del_reporte">Evidencias del Reporte</string>
+    <string name="adjuntar_foto">Adjuntar foto...</string>
+    <string name="evidencias_del_levantamiento">Evidencias del Levantamiento</string>
+
+    <string name="area_ocurrencia">A. Ocurrencia:</string>
+    <string name="empresa_reportante">Emp. Reportante:</string>
+    <string name="tipo_riesgo">Tipo de Riesgo:</string>
+    <string name="persona_reportante">Pers. Reportante:</string>
+
+    <string name="mi_perfil">Mi Perfil</string>
+    <string name="mi_cuenta">Mi cuenta</string>
+    <string name="actividades">Actividades</string>
+    <string name="actividadestitulo">ACTIVIDADES</string>
+    <string name="lugares">Lugares</string>
+    <string name="lugarestitulo">LUGARES</string>
+    <string name="ciclovias">Ciclovías</string>
+    <string name="informacion_utilidad">Información de Utilidad</string>
+    <string name="ajustes">Ajustes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="acerca_de_si">Acerca de San Isidro</string>
+    <string name="yo_quiero_descripcion_lugar">Descripción del Lugar</string>
+    <string name="acerca_de_si_titulo_historia">Historia</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="direccion_lugar">Dirección</string>
+    <string name="horario_atencion_lugar">Horarios de atención</string>
+    <string name="horarios">Horarios</string>
+    <string name="utilidades">Utilidades</string>
+    <string name="esta_bici">Estacionamiento Bicicletas</string>
+    <string name="esta_disca">Estacionamiento Discapacitados</string>
+    <string name="entradas">Entradas</string>
+    <string name="taxis">Taxis</string>
+    <string name="numemergencia">Números de emergencia</string>
+    <string name="valoracion">Valoración</string>
+    <string name="tipodecambio">Tipo de Cambio</string>
+    <string name="clima">Clima</string>
+    <string name="sucediendo_ahora">Sucediendo ahora...</string>
+    <string name="ip_dominio_servidor">IP o dominio del servidor:</string>
+    <string name="ip_dominio">IP o dominio</string>
+    <string name="telefono_lugar">Teléfono</string>
+    <string name="titulo_registro_de_usuario">Registro de Usuario:</string>
+    <string name="titulo_acceso_usuario">Acceso:</string>
+    <string name="titulo_configuracion">Configurar los datos de conexión al servidor:</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="web_lugar">Página Web</string>
+    <string name="acerca_de_si_titulo_cultura">San Isidro Cultural</string>
+    <string name="acerca_de_si_detalle_cultura">La Oficina de Cultura de la Municipalidad de San Isidro es el eje promotor del quehacer cultural dirigido a la comunidad sanisidrina y público en general e impulsa el desarrollo y difusión de las expresiones artísticas y el patrimonio cultural del distrito.</string>
+    <string name="acerca_de_si_titulo_datos_de_contacto">Datos de Contacto</string>
+    <string name="acerca_de_si_titulo_ciudad">Ciudad</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="cerrarsesion2">Esta seguro de cerrar la sesión ?</string>
+    <string name="seleccionar_idioma">Seleccionar Idioma</string>
+    <string name="selecciona_la_red_social_para_compartir">Selecciona la red social para compartir</string>
+    <string name="yo_quiero_lugar_detalle">Yo Quiero </string>
+    <string name="vertodo">Ver Todo</string>
+    <string name="debeiniciarsesion">Debe Iniciar Sesión</string>
+    <string name="grabook">Se grabó satisfactoriamente</string>
+    <string name="ocurrioproblema">Ocurrio un problema, intentelo nuevamente</string>
+    <string name="grabando">Grabando...</string>
+    <string name="actualizook">Actualizó satisfactoriamente</string>
+    <string name="quitoFavorito">Quitó favorito satisfactoriamente</string>
+    <string name="usuarioopswincorrecto">Usuario o Contrasena incorrecto</string>
+    <string name="erroralquitarfavorito">Error al quitar favorito</string>
+    <string name="enviando">Enviando...</string>
+    <string name="seleccionarimagen">Seleccionar Imagen</string>
+    <string name="usuariocreadook">Estimado usuario, su cuenta ha sido creado satisfactoriamente, por favor revise su correo electrónico</string>
+    <string name="cargando">Cargando...</string>
+    <string name="espere">Espere...</string>
+    <array name="idiomas">
+        <item>Ingles</item>
+    </array>
+    <string-array name="idiomascodigos">
+        <item>en</item>
+    </string-array>
+    <string name="vermas">Ver más</string>
+    <string name="fotos_lugar_detalle">Galería de fotos</string>
+    <string name="foto">Foto:</string>
+    <string name="quitar">Quitar</string>
+    <string name="no_activo_notificaciones">No se activó las notificaciones</string>
+    <string name="activacionok">Activación Ok</string>
+    <string name="desactivacionok">Desactivación ok</string>
+    <string name="desactivarnotificaciones">Desactivar notificaciones</string>
+    <string name="proximoseventos">Próximos Eventos</string>
+    <string name="agregarOQuitarActividadesText" >Agregar a Mis Actividades</string>
+    <string name="acerca_de_si_titulo_datos_generales">Datos Generales</string>
+    <string name="leermas">Leer Más</string>
+    <string name="weather_sunny" translatable="false">&#xf00d;</string>
+    <string name="weather_clear_night" translatable="false">&#xf02e;</string>
+    <string name="weather_foggy" translatable="false">&#xf014;</string>
+    <string name="weather_cloudy" translatable="false">&#xf013;</string>
+    <string name="weather_rainy" translatable="false">&#xf019;</string>
+    <string name="weather_snowy" translatable="false">&#xf01b;</string>
+    <string name="weather_thunder" translatable="false">&#xf01e;</string>
+    <string name="weather_drizzle" translatable="false">&#xf01c;</string>
+    <string name="place_not_found"  >Disculpa, el clima no fue hallado.</string>
+    <string name="weather_centigrado" translatable="false">ºC</string>
+    <string name="ultimaActualizacion">Ultima Actualización</string>
+    <string name="humidity">Humedad:</string>
+    <string name="pressure">Presión:</string>
+    <string name="tempmin">Temp. Min:</string>
+    <string name="tempmax">Temp. Máx:</string>
+    <string name="compra">Compra:</string>
+    <string name="venta">Venta:</string>
+    <string name="tiempo">Tiempo:</string>
+    <string name="confirmargps">Habilitar ya sea GPS o cualquier otro servicio de localización para encontrar la ubicación actual . Haga clic en Aceptar para ir a la configuración de los servicios de ubicación para dejar que lo haga.</string>
+    <string name="activargps">Activar servicios de ubicación</string>
+    <string name="noconexion">Verifique su conexión a Internet, y vuelva a intentarlo</string>
+    <string name="ingreseemailynombre">Ingrese Email y Nombre</string>
+    <string name="ingresenombre">Ingrese Nombre</string>
+    <string name="ingreseemail">Ingrese Email</string>
+    <string name="clave">Contraseña</string>
+    <string name="lb_mensaje_descargando">Descargando Parametros ......</string>
+    <string name="lb_mensaje_espera">Loading...</string>
+    <string name="lb_mensaje_validando">Validation Information...</string>
+</resources>

@@ -1,0 +1,390 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_black_1000"
+    android:orientation="vertical"
+    tools:context="pe.dominiotech.movil.safe2biz.sac.activity.AccionCorrectivaDetalleActivity">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+
+        android:id="@+id/scViewSacDetalle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_fondo_menu">
+
+        <RelativeLayout
+            android:id="@+id/rllyRegistroAyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_fondo_menu"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/lnlyDatosGeneralesRegistroAyC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/md_white_1000"
+                android:elevation="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnlyDatosGeneralesRegistroAyC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvSubTituloSac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:text="@string/datos_generales"
+                        android:textColor="@color/app_letra_tab"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlyInfoSac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnlyCampos1Sac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvCodigoSac"
+                            android:layout_width="230dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Código"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCodigoCarViewSac"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Código"
+                            android:textColor="@color/tw__medium_gray"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnlyCampos2Sac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvDescripcionSac"
+                            android:layout_width="230dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:minHeight="30dp"
+                            android:paddingLeft="10dp"
+                            android:text="Descripcion"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvDescripcionCarViewSac"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:minHeight="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Descripcion"
+                            android:textColor="@color/tw__medium_gray"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnlyCampos3Sac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvOrigenSac"
+                            android:layout_width="230dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Origen"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrigenCarViewSac"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Origen"
+                            android:textColor="@color/tw__medium_gray"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnlyCampos4Sac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvFechaSac"
+                            android:layout_width="230dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Fecha"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvFechaCarViewSac"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Fecha"
+                            android:textColor="@color/tw__medium_gray"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnlyCampos5Sac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvResponsableSac"
+                            android:layout_width="230dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Responsable"
+                            android:textColor="@color/app_letra_tab"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvResponsableCarViewSac"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.6"
+                            android:background="@drawable/border_sac_campo"
+                            android:gravity="center_vertical"
+                            android:minHeight="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Responsable"
+                            android:textColor="@color/tw__medium_gray"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/tabDetalleReporte2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/lnlyDatosGeneralesRegistroAyC"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnlyDatosGeneralesSac"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/md_white_1000"
+                    android:elevation="3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnlyInfoSac2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnlyCampos1Sac2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_sac_separador_cardview"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tvFechaSac2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:text="Fecha de Ejecución"
+                                android:textColor="@color/app_letra_tab"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edFecha"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:background="@drawable/border_sac_campo"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:inputType="datetime"
+                                android:textColor="@color/app_letra_tab"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:id="@+id/imgBtnFechaSac"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="0"
+                                android:background="@color/md_white_1000"
+                                android:contentDescription="@string/fecha"
+                                android:onClick="showDatePickerDialog"
+                                android:src="@drawable/ic_event_black_24dp"
+                                android:tint="#333" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lnlyCampos2Sac2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="3">
+
+                            <ImageButton
+                                android:id="@+id/btnGaleria"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/md_white_1000"
+                                android:src="@drawable/ic_insert_photo_white_36dp"
+                                android:tint="#333" />
+
+                            <ImageButton
+                                android:id="@+id/btnCamara"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/md_white_1000"
+                                android:src="@drawable/ic_camera" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/imagegallery"
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="vertical"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btnGuardar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="@string/guardar_detalle"
+                            android:theme="@style/AppTheme.Button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

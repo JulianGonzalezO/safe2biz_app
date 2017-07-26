@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListaVerificacionDetalleActivity">
+
+    <item
+        android:id="@+id/action_save_registro_ayc_detalle"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/guardar_detalle"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:menuCategory="secondary"
+        android:visible="true"/>
+
+</menu>

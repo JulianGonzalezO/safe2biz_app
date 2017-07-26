@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardBackgroundColor="@color/md_white_1000"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:id="@+id/lnlyCarViewListaCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="@drawable/border_carview_categoria">
+
+        <TextView
+            android:id="@+id/tvTituloCategoriaCarViewItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/safe2biz_anaranjado"
+            android:textColor="@color/app_letra_tab"
+            android:textSize="16sp"
+            android:padding="6dp"/>
+
+        <!--<pe.dominiotech.movil.safe2biz.utils.MyGridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/gridViewSubCategoria"-->
+            <!--android:numColumns="1"-->
+            <!--android:columnWidth="300dp"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:isScrollContainer="false"-->
+            <!--android:verticalSpacing="2dp"-->
+            <!--android:scrollbars="none"-->
+            <!--android:clickable="true"-->
+            <!--android:scrollbarAlwaysDrawHorizontalTrack="false"-->
+            <!--android:scrollbarAlwaysDrawVerticalTrack="false">-->
+
+        <!--</pe.dominiotech.movil.safe2biz.utils.MyGridView>-->
+
+        <pe.dominiotech.movil.safe2biz.utils.MyListView
+            android:id="@+id/listViewSubCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scrollbars="none"
+            android:padding="0px">
+        </pe.dominiotech.movil.safe2biz.utils.MyListView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

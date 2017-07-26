@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pe.dominiotech.movil.safe2biz"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+
+
+    <application
+        android:name="pe.dominiotech.movil.safe2biz.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat"
+        >
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".base.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/MyMaterialTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".base.activity.MenuActivity"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".base.activity.ListaUnidadesActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ops.activity.ListaVerificacionActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ops.activity.RegistroGeneralesActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ops.activity.RegistroGeneralesFormActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ops.activity.ListaVerificacionPreguntaActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".base.activity.ConfiguracionActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".base.activity.DescargarActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".base.activity.CargarActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ayc.activity.RegistroActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".base.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+        android:name=".base.activity.MapaActivity"
+        android:theme="@style/Theme.AppCompat"
+        android:configChanges="orientation|layoutDirection|locale"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ayc.activity.RegistroDetalleActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sac.activity.AccionCorrectivaActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sac.activity.AccionCorrectivaDetalleActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBiNu0iNccpeVoxNiUOBg3ryKONHufpyqg" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0ee835cdef4515d38ba57efbccb855aaa9d28af3" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!--<provider-->
+            <!--android:name="com.facebook.FacebookContentProvider"-->
+            <!--android:authorities="com.facebook.app.FacebookContentProvider1629932873948622"-->
+            <!--android:exported="true" />-->
+
+
+    </application>
+
+</manifest>

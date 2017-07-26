@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupoImagenesAppText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Fotos Sistema"
+        android:layout_alignParentStart="true" />
+
+    <GridView
+        android:id="@+id/fotosSistemaGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="65dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:layout_below="@id/grupoImagenesAppText"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/grupoImagenesPersonasText"
+        android:layout_below="@id/fotosSistemaGridView"
+        android:text="Fotos de Personas"  />
+
+    <GridView
+        android:id="@+id/fotosPersonasGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="65dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:layout_below="@id/grupoImagenesPersonasText"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"/>
+</RelativeLayout>

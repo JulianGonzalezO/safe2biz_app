@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="38dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <EditText
+            android:id="@+id/textViewMenuItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_padding_16"
+            android:layout_marginLeft="@dimen/margin_padding_40"
+            android:layout_marginRight="@dimen/margin_padding_16"
+            android:layout_marginStart="@dimen/margin_padding_16"
+            android:text=""
+            style="@style/AppNormalFont"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:layout_gravity="start"
+            android:paddingRight="30dp"/>
+
+        <ImageButton
+            android:id="@+id/imageViewMenuItemIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/margin_padding_16"
+            android:layout_marginLeft="@dimen/margin_padding_16_24"
+            android:layout_marginRight="@dimen/margin_padding_16"
+            android:layout_marginStart="@dimen/margin_padding_16"
+            android:background="@color/fondo_transparente"
+            android:tint="@color/app_anaranjado" />
+
+    </RelativeLayout>
+
+</FrameLayout>

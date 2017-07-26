@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promptAdjuntar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adjuntar_selecionar"
+        android:textSize="20sp"
+        android:textColor="@color/safe2biz_azul"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@color/safe2biz_anaranjado"
+        android:layout_marginBottom="10dp">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tvGaleriaOption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adjuntar_de_galeria"
+        android:textSize="18sp"
+        android:textColor="@color/app_letra_tab"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/safe2biz_anaranjado_claro"
+        android:layout_marginBottom="10dp">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tvTomarFotoOption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adjuntar_de_tomar_foto"
+        android:textSize="18sp"
+        android:textColor="@color/app_letra_tab"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

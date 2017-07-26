@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/lnlySubirModulos"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:fitsSystemWindows="@bool/fitsSystemWindows"
+	android:background="@color/app_fondo_menu"
+	tools:context="pe.dominiotech.movil.safe2biz.base.activity.CargarActivity" >
+
+	<include
+		android:id="@+id/app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		layout="@layout/tool_bar" />
+
+	<RelativeLayout
+		android:id="@+id/rlyDatosSubida"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/app_bar">
+
+		<LinearLayout
+			android:id="@+id/lnlyfiltro"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="20dp"
+			android:orientation="vertical" >
+
+			<CheckedTextView
+				android:id="@+id/chkModuloListaVerificacionSubida"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:checkMark="@drawable/seleccion_checkbox"
+				android:text="@string/lb_modulo_observaciones_preventivas"
+				android:checkMarkTint="@color/safe2biz_anaranjado_logo"/>
+
+			<CheckedTextView
+				android:visibility="gone"
+				android:id="@+id/chkModuloActosAndCondicionesSubida"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:text="@string/lb_modulo_actos_and_condiciones"
+				android:checkMark="@drawable/seleccion_checkbox"
+				android:checkMarkTint="@color/safe2biz_anaranjado_logo"/>
+
+			<CheckedTextView
+				android:visibility="gone"
+				android:id="@+id/chkModuloEjecucionSacSubida"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:text="@string/lb_modulo_acciones_correctivas"
+				android:checkMark="@drawable/seleccion_checkbox"
+				android:checkMarkTint="@color/safe2biz_anaranjado_logo"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearLayout1Subida"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/lnlyfiltro"
+			android:layout_marginTop="30dip"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:orientation="horizontal" >
+
+			<Button
+				android:theme="@style/AppTheme.Button"
+				android:id="@+id/btnSubir"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:enabled="false"
+				android:text="@string/enviar" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tvNumeroFormatosSubida"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/linearLayout1Subida"
+			android:layout_marginLeft="35dp"
+			android:layout_marginTop="34dp"
+			android:textColor="@color/md_red_A700"
+			android:textSize="15sp"
+			android:visibility="gone"/>
+	</RelativeLayout>
+
+</RelativeLayout>

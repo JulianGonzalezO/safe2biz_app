@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promptUpload"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/por_enviar"
+        android:textSize="24sp"
+        android:textColor="@color/safe2biz_azul"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/safe2biz_azul"
+        android:layout_marginBottom="10dp">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tvTotalDeRegistrosUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download"
+        android:textSize="22sp"
+        android:textColor="@color/app_letra_tab"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
